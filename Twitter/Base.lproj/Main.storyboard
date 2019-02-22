@@ -18,9 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Twitter_Logo_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="3lO-3h-J3N">
+                                <rect key="frame" x="56" y="133" width="263" height="400"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-13-Wru">
-                                <rect key="frame" x="100" y="302" width="175" height="63"/>
+                                <rect key="frame" x="136" y="562" width="103" height="37"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="WNN-vK-rFS"/>
+                                    <constraint firstAttribute="width" constant="103" id="yYE-RG-XHq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,10 +39,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="r7f-13-Wru" firstAttribute="leading" secondItem="W1g-pL-Gox" secondAttribute="leading" constant="100" id="ACz-EH-6nE"/>
-                            <constraint firstItem="r7f-13-Wru" firstAttribute="centerX" secondItem="TCr-uV-Do7" secondAttribute="centerX" id="F36-w1-DBY"/>
-                            <constraint firstItem="r7f-13-Wru" firstAttribute="centerY" secondItem="TCr-uV-Do7" secondAttribute="centerY" id="PKc-Cn-pMe"/>
-                            <constraint firstItem="r7f-13-Wru" firstAttribute="top" secondItem="W1g-pL-Gox" secondAttribute="top" constant="282" id="l7G-Um-eg9"/>
+                            <constraint firstItem="W1g-pL-Gox" firstAttribute="trailing" secondItem="r7f-13-Wru" secondAttribute="trailing" constant="136" id="5UV-pQ-cAx"/>
+                            <constraint firstItem="W1g-pL-Gox" firstAttribute="trailing" secondItem="3lO-3h-J3N" secondAttribute="trailing" constant="56" id="MGd-GV-XhN"/>
+                            <constraint firstItem="3lO-3h-J3N" firstAttribute="leading" secondItem="W1g-pL-Gox" secondAttribute="leading" constant="56" id="Tjv-MW-Axz"/>
+                            <constraint firstItem="r7f-13-Wru" firstAttribute="leading" secondItem="W1g-pL-Gox" secondAttribute="leading" constant="136" id="X0t-EX-6t3"/>
+                            <constraint firstItem="3lO-3h-J3N" firstAttribute="top" secondItem="W1g-pL-Gox" secondAttribute="top" constant="113" id="dpa-Ja-Tr4"/>
+                            <constraint firstItem="r7f-13-Wru" firstAttribute="top" secondItem="W1g-pL-Gox" secondAttribute="top" constant="542" id="sXl-0m-M2N"/>
+                            <constraint firstItem="W1g-pL-Gox" firstAttribute="bottom" secondItem="r7f-13-Wru" secondAttribute="bottom" constant="68" id="u7S-Cs-kXg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W1g-pL-Gox"/>
                     </view>
@@ -142,4 +152,7 @@
             <point key="canvasLocation" x="-1226" y="-1118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Twitter_Logo_Blue" width="400" height="400"/>
+    </resources>
 </document>
